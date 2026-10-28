@@ -1,0 +1,27 @@
+# Build artifacts
+build/
+*.o
+*.obj
+*.zip
+CpuTempTile.zip
+
+# Reverse-engineering scratch (REA/Ghidra snapshot, dumps)
+reverse/
+taskmgr
+
+# Accidental duplicate of package/
+/CpuTempTile/
+
+# Probe / diagnostic sources
+src/native/probe*.c
+src/winenum.c
+src/findtest.c
+src/setfg.c
+src/test_coretemp.c
+
+# Legacy experiments (overlay + append-only)
+src/overlay.c
+src/overlay.h
+src/hookdll.c
+src/standalone.c
+src/native/cputemp_native.c
